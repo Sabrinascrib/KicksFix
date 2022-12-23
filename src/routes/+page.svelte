@@ -2,8 +2,8 @@
 	import homeplush from '$lib/assets/home-plush.jpg';
 </script>
 
-<section class="header flex flex-row place-items-center justify-center mx-10 max-w-[3000px]">
-	<div class="header-info w-1/2 ">
+<section class="hero flex flex-row place-items-center justify-center mx-10 max-w-[3000px]">
+	<div class="hero-info w-1/2 ">
 		<h2 class="text-[3vw] font-extrabold text-sky-200 mb-4">Fluffy, Cute, Sanrio.</h2>
 
 		<p class="text-[1.5vw] text-rose-200 font-semibold mb-6">Get your sanrio plushie now!</p>
