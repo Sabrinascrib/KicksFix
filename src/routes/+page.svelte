@@ -1,6 +1,10 @@
 <script>
 	import homeplush from '$lib/assets/home-plush.jpg';
+
+	import Navbar from '$lib/components/Navbar.svelte';
 </script>
+
+<Navbar />
 
 <section class="hero flex flex-row place-items-center justify-center mx-10 max-w-[3000px]">
 	<div class="hero-info w-1/2 ">
