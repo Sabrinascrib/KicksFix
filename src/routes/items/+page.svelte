@@ -1,4 +1,6 @@
 <script>
+	import Navbar from '$lib/components/Navbar.svelte';
+
 	let items = [
 		{
 			img: 'https://sneakernews.com/wp-content/uploads/2022/01/Air-Jordan-4-Infrared-DH6927-061-5.jpg',
@@ -21,12 +23,6 @@
 			title: 'Air Jordan 4 Thunder',
 			price: '380€'
 		},
-
-		{
-			img: 'https://sneakernews.com/wp-content/uploads/2022/08/air-jordan-4-gs-messy-room-dr6952-400-5.jpg',
-			title: 'Air Jordan 4 GS Messy Room',
-			price: '380€'
-		},
 		{
 			img: 'https://sneakernews.com/wp-content/uploads/2022/07/jordan-4-canyon-purple-AQ9129-500-1.jpg',
 			title: 'Air Jordan 4 Canyon Purple',
@@ -37,6 +33,7 @@
 			title: 'Air Jordan 4 Fire Red',
 			price: '380€'
 		},
+
 		{
 			img: 'https://sneakernews.com/wp-content/uploads/2022/02/air-jordan-4-blank-canvas-dq4909-100-release-date-7.jpg',
 			title: 'Air Jordan 4 Blank Canvas',
@@ -55,10 +52,28 @@
 	];
 </script>
 
-<main>
-	{#each items as item}
-		<img src={item.img} alt={item.title} />
-		<h4>{item.title}</h4>
-		<p>{item.price}</p>
-	{/each}
+<Navbar />
+
+<main class=" max-w-[1500px] mx-auto mt-40">
+	<h3 class="text-center text-xl">All Sneakers</h3>
+	<div class="w-6 mx-auto">
+		<hr class="border-2   border-red-500 text-center" />
+	</div>
+
+	<div class="max-w-[1500px] flex flex-row flex-wrap place-items-center  justify-evenly">
+		{#each items as item}
+			<div class="flex flex-col  m-10">
+				<img class="w-96" src={item.img} alt={item.title} />
+				<h4>{item.title}</h4>
+				<p>{item.price}</p>
+			</div>
+		{/each}
+	</div>
 </main>
+
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+	main {
+		font-family: 'Poppins', sans-serif;
+	}
+</style>
