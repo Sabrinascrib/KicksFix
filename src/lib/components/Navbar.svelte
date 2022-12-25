@@ -3,9 +3,9 @@
 </script>
 
 <div
-	class="w-full h-20 flex flex-row justify-between place-items-center mx-auto  px-10 max-w-[1500px]"
+	class="w-full h-20 flex flex-row justify-between place-items-center mx-auto  px-10 max-w-[1400px]"
 >
-	<div class="link ">
+	<div class="links ">
 		<a class=" font-normal uppercase text-lg" href="/">Home</a>
 		<a class=" font-normal uppercase ml-8 text-lg" href="/items">Shop</a>
 	</div>
@@ -27,12 +27,15 @@
 	>
 </div>
 
-<!-- ffa0a5 -->
 <style>
 	@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
 	@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 	h3 {
 		font-family: 'Bebas Neue', cursive;
+	}
+
+	.links {
+		font-family: 'Poppins', sans-serif;
 	}
 </style>
