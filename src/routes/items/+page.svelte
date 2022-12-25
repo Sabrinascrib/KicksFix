@@ -54,3 +54,11 @@
 		}
 	];
 </script>
+
+<main>
+	{#each items as item}
+		<img src={item.img} alt={item.title} />
+		<h4>{item.title}</h4>
+		<p>{item.price}</p>
+	{/each}
+</main>
