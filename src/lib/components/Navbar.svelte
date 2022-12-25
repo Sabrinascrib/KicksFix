@@ -6,11 +6,13 @@
 	class="w-full h-20 flex flex-row justify-between place-items-center mx-auto  px-10 max-w-[1500px]"
 >
 	<div class="link ">
-		<a class="text-rose-200 font-bold text-lg" href="/">Home</a>
-		<a class="text-sky-200 font-bold ml-8 text-lg" href="/items">Shop</a>
+		<a class=" font-normal uppercase text-lg" href="/">Home</a>
+		<a class=" font-normal uppercase ml-8 text-lg" href="/items">Shop</a>
 	</div>
-	<h3 class="text-xl uppercase font-bold text-rose-200">Shop Rio</h3>
-	<a class="text-3xl text-sky-200" href="/cart"
+	<h3 class="text-4xl text-center uppercase font-bold ">
+		Kicks<span class="text-red-500">Fix</span>
+	</h3>
+	<a class="text-3xl " href="/cart"
 		><svg
 			xmlns="http://www.w3.org/2000/svg"
 			width="1em"
@@ -19,10 +21,18 @@
 			viewBox="0 0 256 256"
 			><path
 				fill="currentColor"
-				d="M100 216a20 20 0 1 1-20-20a20.1 20.1 0 0 1 20 20Zm84-20a20 20 0 1 0 20 20a20.1 20.1 0 0 0-20-20Zm49.3-120.7l-24.2 84.4a28.1 28.1 0 0 1-26.9 20.3H81.8a28.1 28.1 0 0 1-26.9-20.3L30.8 75.5c0-.1-.1-.3-.1-.4L21.8 44H12a12 12 0 0 1 0-24h12.8a20.3 20.3 0 0 1 19.3 14.5L51.3 60h170.4a12.1 12.1 0 0 1 11.6 15.3ZM205.8 84H58.2l19.7 69.1a4.1 4.1 0 0 0 3.9 2.9h100.4a4.1 4.1 0 0 0 3.9-2.9Z"
+				d="m209.7 131.9l12.2-66.8a6.1 6.1 0 0 0-1.3-4.9A5.8 5.8 0 0 0 216 58H53l-5.2-28.5A13.9 13.9 0 0 0 34.1 18H16a6 6 0 0 0 0 12h18.1a2 2 0 0 1 1.9 1.6l27.7 152.2A26 26 0 1 0 106 204a25.6 25.6 0 0 0-4.1-14h60.2a25.6 25.6 0 0 0-4.1 14a26 26 0 1 0 26-26H74.8l-5.1-28h118.4a22 22 0 0 0 21.6-18.1ZM94 204a14 14 0 1 1-14-14a14 14 0 0 1 14 14Zm104 0a14 14 0 1 1-14-14a14 14 0 0 1 14 14ZM55.2 70h153.6l-10.9 59.8a10 10 0 0 1-9.8 8.2H67.6Z"
 			/></svg
 		></a
 	>
 </div>
 
 <!-- ffa0a5 -->
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+	h3 {
+		font-family: 'Bebas Neue', cursive;
+	}
+</style>
