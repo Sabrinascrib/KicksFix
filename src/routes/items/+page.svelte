@@ -72,7 +72,6 @@
 <Navbar />
 
 <main class=" max-w-[1500px] mx-auto mt-40">
-	<h3 class="text-center text-xl">All Sneakers</h3>
 	<div class="w-6 mx-auto">
 		<hr class="border-2   border-[#fa0f0f] text-center" />
 	</div>
