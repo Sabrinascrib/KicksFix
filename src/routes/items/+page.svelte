@@ -94,6 +94,9 @@
 			</div>
 		{/each}
 	</div>
+	<div class="w-6 mx-auto">
+		<hr class="border-2   border-[#fa0f0f] text-center" />
+	</div>
 </main>
 
 <Footer />
