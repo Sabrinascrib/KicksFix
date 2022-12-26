@@ -1,19 +1,30 @@
 <script>
-	import homeplush from '$lib/assets/home-plush.jpg';
+	import balckcanvas from '$lib/assets/black-canvas.jpg';
 
 	import Navbar from '$lib/components/Navbar.svelte';
 </script>
 
 <Navbar />
 
-<section class="hero flex flex-row place-items-center justify-center mx-10 max-w-[3000px]">
-	<div class="hero-info w-1/2 ">
-		<h2 class="text-[3vw] font-extrabold text-sky-200 mb-4">Fluffy, Cute, Sanrio.</h2>
-
-		<p class="text-[1.5vw] text-rose-200 font-semibold mb-6">Get your sanrio plushie now!</p>
-		<a class="text-[1vw] bg-sky-200 py-2 px-10 rounded-full text-white" href="/items">Buy Now</a>
+<section class="hero mt-40 flex flex-row place-items-center justify-center mx-10 max-w-[3000px]">
+	<div class="hero-info  ">
+		<h2 class="text-[50px] font-bold text-black mb-4 max-w-[600px] uppercase">
+			Get yourself a pair of jordan 4's now!
+		</h2>
+		<a class="text-lg bg-[#fa0f0f] py-2 px-10 uppercase text-white" href="/items">Shop</a>
 	</div>
-	<div class="w-1/2">
-		<img class="" src={homeplush} alt="blue plushie" />
+	<div class="">
+		<img class="w-[500px]" src={balckcanvas} alt="blue plushie" />
 	</div>
 </section>
+
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+	.hero {
+		font-family: 'Poppins', sans-serif;
+	}
+
+	a {
+		font-family: 'Bebas Neue', cursive;
+	}
+</style>
