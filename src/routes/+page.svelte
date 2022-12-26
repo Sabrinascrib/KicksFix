@@ -7,7 +7,7 @@
 
 <Navbar />
 
-<section class="hero mt-40 flex flex-row place-items-center justify-center mx-10 max-w-[3000px]">
+<section class="hero my-40 flex flex-row place-items-center justify-center mx-10 max-w-[3000px]">
 	<div class="hero-info  ">
 		<h2 class="text-[50px] font-bold text-black mb-4 max-w-[600px] uppercase">
 			Get yourself a pair of jordan 4's now!
