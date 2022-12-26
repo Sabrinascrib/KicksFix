@@ -4,6 +4,7 @@
 
 	let items = [
 		{
+			id: '1',
 			img: 'https://sneakernews.com/wp-content/uploads/2022/01/Air-Jordan-4-Infrared-DH6927-061-5.jpg',
 			img1: 'https://sneakernews.com/wp-content/uploads/2022/01/Air-Jordan-4-Infrared-DH6927-061-10.jpg?w=1140',
 			img2: 'https://sneakernews.com/wp-content/uploads/2022/01/Air-Jordan-4-Infrared-DH6927-061-1.jpg?w=1140',
@@ -11,6 +12,7 @@
 			price: '330€'
 		},
 		{
+			id: '2',
 			img: 'https://sneakernews.com/wp-content/uploads/2022/07/jordan-4-canvas-DH7138-006-6.jpg',
 			img1: 'https://sneakernews.com/wp-content/uploads/2022/07/jordan-4-canvas-DH7138-006-2.jpg',
 			img2: 'https://sneakernews.com/wp-content/uploads/2022/07/jordan-4-canvas-DH7138-006-1.jpg',
@@ -18,6 +20,7 @@
 			price: '380€'
 		},
 		{
+			id: '3',
 			img: 'https://sneakernews.com/wp-content/uploads/2022/08/air-jordan-4-white-navy-dh6927-140-official-images-5.jpg',
 			img1: 'https://sneakernews.com/wp-content/uploads/2022/08/air-jordan-4-white-navy-dh6927-140-official-images-1.jpg',
 			img2: 'https://sneakernews.com/wp-content/uploads/2022/08/air-jordan-4-white-navy-dh6927-140-official-images-2.jpg',
@@ -25,6 +28,7 @@
 			price: '320€'
 		},
 		{
+			id: '4',
 			img: 'https://sneakernews.com/wp-content/uploads/2022/08/air-jordan-4-thunder-2023-release-info-2.jpg',
 			img1: 'https://sneakernews.com/wp-content/uploads/2022/08/air-jordan-4-thunder-2023-release-info-1.jpg',
 			img2: 'https://sneakernews.com/wp-content/uploads/2022/08/air-jordan-4-thunder-2023-release-info-5.jpg',
@@ -32,6 +36,7 @@
 			price: '880€'
 		},
 		{
+			id: '5',
 			img: 'https://sneakernews.com/wp-content/uploads/2022/07/jordan-4-canyon-purple-AQ9129-500-1.jpg',
 			img1: 'https://sneakernews.com/wp-content/uploads/2022/07/jordan-4-canyon-purple-AQ9129-500-5.jpg',
 			img2: 'https://sneakernews.com/wp-content/uploads/2022/07/jordan-4-canyon-purple-AQ9129-500-4.jpg',
@@ -39,6 +44,7 @@
 			price: '280€'
 		},
 		{
+			id: '6',
 			img: 'https://sneakernews.com/wp-content/uploads/2020/09/jordan-4-fire-red-official-images-DC7770-160-7.jpg',
 			img1: 'https://sneakernews.com/wp-content/uploads/2020/09/jordan-4-fire-red-official-images-DC7770-160-1.jpg?w=1140',
 			img2: 'https://sneakernews.com/wp-content/uploads/2020/09/jordan-4-fire-red-official-images-DC7770-160-2.jpg?w=1140',
@@ -47,6 +53,7 @@
 		},
 
 		{
+			id: '7',
 			img: 'https://sneakernews.com/wp-content/uploads/2022/02/air-jordan-4-blank-canvas-dq4909-100-release-date-7.jpg',
 			img1: 'https://sneakernews.com/wp-content/uploads/2022/02/air-jordan-4-blank-canvas-dq4909-100-release-date-5.jpg',
 			img2: 'https://sneakernews.com/wp-content/uploads/2022/02/air-jordan-4-blank-canvas-dq4909-100-release-date-1.jpg',
@@ -54,6 +61,7 @@
 			price: '360€'
 		},
 		{
+			id: '8',
 			img: 'https://sneakernews.com/wp-content/uploads/2020/05/Air-Jordan-4-Metallic-Purple-Kids-408452_115-4.jpg',
 			img1: 'https://sneakernews.com/wp-content/uploads/2020/05/Air-Jordan-4-Metallic-Purple-Kids-408452_115-6.jpg',
 			img2: 'https://sneakernews.com/wp-content/uploads/2020/05/Air-Jordan-4-Metallic-Purple-Kids-408452_115-1.jpg',
@@ -61,6 +69,7 @@
 			price: '750€'
 		},
 		{
+			id: '9',
 			img: 'https://sneakernews.com/wp-content/uploads/2021/04/air-jordan-4-lightning-CT8527-700-release-date-8.jpg',
 			img1: 'https://sneakernews.com/wp-content/uploads/2021/04/air-jordan-4-lightning-CT8527-700-release-date-1.jpg?w=1140',
 			img2: 'https://sneakernews.com/wp-content/uploads/2021/04/air-jordan-4-lightning-CT8527-700-release-date-2.jpg?w=1140',
@@ -80,13 +89,15 @@
 	<div class="max-w-[1500px] flex flex-row flex-wrap place-items-center  justify-evenly">
 		{#each items as item}
 			<div class="flex flex-col  m-10">
-				<img class="w-96 absolute" src={item.img} alt={item.title} />
-				<img
-					class="w-96 relative duration-100 opacity-0 hover:opacity-100"
-					src={item.img1}
-					alt={item.title}
-				/>
-				<h4 class="font-semibold text-lg mt-4">{item.title}</h4>
+				<a href={`/product/${item.id}`}>
+					<img class="w-96 absolute" src={item.img} alt={item.title} />
+					<img
+						class="w-96 relative duration-100 opacity-0 hover:opacity-100"
+						src={item.img1}
+						alt={item.title}
+					/>
+					<h4 class="font-semibold text-lg mt-4">{item.title}</h4>
+				</a>
 				<div class="flex flex-row place-items-center">
 					<p class="font-normal text-base">{item.price}</p>
 					<span class="text-[#fa0f0f] italic text-xs ml-2"> (resell price) </span>
