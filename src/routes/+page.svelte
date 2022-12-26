@@ -1,5 +1,6 @@
 <script>
 	import balckcanvas from '$lib/assets/black-canvas.jpg';
+	import Footer from '$lib/components/Footer.svelte';
 
 	import Navbar from '$lib/components/Navbar.svelte';
 </script>
@@ -17,6 +18,8 @@
 		<img class="w-[500px]" src={balckcanvas} alt="blue plushie" />
 	</div>
 </section>
+
+<Footer />
 
 <style>
 	@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');

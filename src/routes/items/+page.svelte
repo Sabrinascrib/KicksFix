@@ -1,4 +1,5 @@
 <script>
+	import Footer from '$lib/components/Footer.svelte';
 	import Navbar from '$lib/components/Navbar.svelte';
 
 	let items = [
@@ -94,6 +95,8 @@
 		{/each}
 	</div>
 </main>
+
+<Footer />
 
 <style>
 	@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
