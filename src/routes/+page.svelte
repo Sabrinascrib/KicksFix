@@ -16,7 +16,7 @@
 			Get yourself a pair of jordan 4's now!
 		</h2>
 		<a
-			class="text-lg bg-[#fa0f0f]  py-2 duration-100 px-10 uppercase text-white hover:bg-[#d61212] "
+			class="text-lg bg-[#fa0f0f]  py-2 rounded-sm duration-100 px-10 uppercase text-white hover:bg-[#d61212] "
 			href="/items">Shop</a
 		>
 	</div>

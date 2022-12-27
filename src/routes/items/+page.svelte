@@ -90,9 +90,9 @@
 		{#each items as item}
 			<div class="flex flex-col  m-10">
 				<a href={`/product/${item.id}`}>
-					<img class="w-96 absolute" src={item.img} alt={item.title} />
+					<img class="w-96 rounded-sm absolute" src={item.img} alt={item.title} />
 					<img
-						class="w-96 relative duration-100 opacity-0 hover:opacity-100"
+						class="w-96 rounded-sm relative duration-100 opacity-0 hover:opacity-100"
 						src={item.img1}
 						alt={item.title}
 					/>
