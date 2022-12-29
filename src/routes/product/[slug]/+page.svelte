@@ -7,15 +7,17 @@
 
 <Navbar />
 
-<div class="flex flex-row max-w-[1500px] my-40 mx-auto">
-	<div class="w-1/2 mr-16">
-		<img class="w-[800px] " src={data.item.img} alt={data.item.title} />
+<div
+	class="flex mx-auto flex-col-reverse  px-10 my-40 max-w-[663px]   xl:flex-row xl:max-w-[1500px]"
+>
+	<div class=" max-w-[663px] mt-6 xl:mr-16 xl:w-1/2">
+		<img class=" xl:w-[800px] " src={data.item.img} alt={data.item.title} />
 	</div>
 
-	<div class="w-1/2 flex flex-col justify-between">
-		<div class="flex flex-col">
+	<div class=" flex flex-col max-w-[663px] justify-between xl:w-1/2">
+		<div class="flex max-w-[663px] flex-col">
 			<h2 class="font-bold text-3xl">{data.item.title}</h2>
-			<p class="text-xl mt-5">{data.item.price}</p>
+			<p class="text-xl mb-4 mt-5">{data.item.price}</p>
 		</div>
 
 		<button
@@ -23,8 +25,10 @@
 			>Add To Cart</button
 		>
 		<div class="flex flex-row">
-			<img class="w-80 mr-6" src={data.item.img1} alt={data.item.title} />
-			<img class="w-80 " src={data.item.img2} alt={data.item.title} />
+			<div class=" mr-6 xl:w-1/2">
+				<img class="w-80 " src={data.item.img1} alt={data.item.title} />
+			</div>
+			<div class="xl:w-1/2"><img class="w-80 " src={data.item.img2} alt={data.item.title} /></div>
 		</div>
 	</div>
 </div>
@@ -33,6 +37,6 @@
 
 <style>
 	button {
-		font-family: 'Bebas Neue', cursive;
+		font-family: 'Bebas Neue', sans-serif;
 	}
 </style>
