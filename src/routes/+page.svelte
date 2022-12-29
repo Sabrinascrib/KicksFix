@@ -9,10 +9,12 @@
 <Navbar />
 
 <section
-	class="hero mb-[550px] mt-56 flex flex-row place-items-center justify-center mx-10 max-w-[3000px]"
+	class="hero mb-[550px] mt-56 flex flex-col sm:flex-row place-items-center justify-center mx-10 max-w-[3000px]"
 >
-	<div class="hero-info mr-[-100px] ">
-		<h2 class="text-[50px] font-bold text-black mb-4 max-w-[400px] uppercase">
+	<div class="hero-info sm:mr-[-100px] ">
+		<h2
+			class="text-4xl  sm:text-[5vw] font-bold text-black mb-8 sm:mb-4 max-w-[400px] uppercase lg:text-[50px]"
+		>
 			Get yourself a pair of jordan 4's now!
 		</h2>
 		<a
@@ -21,7 +23,11 @@
 		>
 	</div>
 	<div class="">
-		<img class="w-[700px] mb-[-300px] ml-[-20px]" src={firered} alt="blue plushie" />
+		<img
+			class=" w-[500px] sm:w-[700px] sm:mb-[-300px] sm:ml-[-20px]"
+			src={firered}
+			alt="blue plushie"
+		/>
 	</div>
 </section>
 
