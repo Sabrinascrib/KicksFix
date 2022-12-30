@@ -10,5 +10,5 @@ A sneaker shop for Jordan 4's. You can click on each shoe and see more informati
 - Advantages and disadvantages of Sveltekit
 - And much more...
  
-#
+
  
