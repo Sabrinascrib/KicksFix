@@ -7,6 +7,7 @@ A sneaker shop for Jordan 4's. You can click on each shoe and see more informati
 ### <img src="https://emojipedia-us.s3.amazonaws.com/source/microsoft-teams/337/writing-hand_270d-fe0f.png" width="35px" />  What I've learned 
 
 - Pages & routing 
+- Advantages and disadvantages of Sveltekit
 - And much more...
  
 #
