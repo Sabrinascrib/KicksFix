@@ -1,6 +1,6 @@
 import { writable } from 'svelte/store';
 
-export const items = writable([
+export const products = [
 	{
 		id: '1',
 		img: 'https://sneakernews.com/wp-content/uploads/2022/01/Air-Jordan-4-Infrared-DH6927-061-5.jpg',
@@ -82,6 +82,6 @@ export const items = writable([
 		price: '380€',
 		quantity: 0
 	}
-]);
+];
 
 export const cart = writable([]);
