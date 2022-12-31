@@ -1,7 +1,7 @@
 <script>
+	import { products } from './../../lib/data.js';
 	import Footer from '$lib/components/Footer.svelte';
 	import Navbar from '$lib/components/Navbar.svelte';
-	import { items } from '$lib/data.js';
 </script>
 
 <Navbar />
@@ -12,19 +12,19 @@
 	</div>
 
 	<div class="max-w-[1500px] flex flex-row flex-wrap place-items-center  justify-evenly">
-		{#each $items as item}
+		{#each products as product}
 			<div class="flex flex-col  m-10">
-				<a href={`/product/${item.id}`}>
-					<img class="w-96 rounded-sm absolute" src={item.img} alt={item.title} />
+				<a href={`/product/${product.id}`}>
+					<img class="w-96 rounded-sm absolute" src={product.img} alt={product.title} />
 					<img
 						class="w-96 rounded-sm relative duration-100 opacity-0 hover:opacity-100"
-						src={item.img1}
-						alt={item.title}
+						src={product.img1}
+						alt={product.title}
 					/>
-					<h4 class="font-semibold text-lg mt-4">{item.title}</h4>
+					<h4 class="font-semibold text-lg mt-4">{product.title}</h4>
 				</a>
 				<div class="flex flex-row place-items-center">
-					<p class="font-normal text-base">{item.price}</p>
+					<p class="font-normal text-base">{product.price}</p>
 					<span class="text-[#fa0f0f] italic text-xs ml-2"> (resell price) </span>
 				</div>
 			</div>
