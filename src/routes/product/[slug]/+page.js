@@ -1,12 +1,12 @@
 /** @type {import('./$types').PageLoad} */
 
 export function load({ params }) {
-	const item = items.find((element) => element.id == `${params.slug}`);
+	const product = products.find((element) => element.id == `${params.slug}`);
 
-	console.log(item);
+	console.log(product);
 	return {
-		item
+		product
 	};
 }
 
-import { items } from '$lib/data.js';
+import { products } from '$lib/data.js';
