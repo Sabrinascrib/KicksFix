@@ -1,5 +1,7 @@
 <script>
-	let amount = 0;
+	import { products, cart } from '$lib/data';
+
+	$: totalCartItems = $cart.length && $cart.reduce((sum, item) => sum + item.quantity, 0);
 </script>
 
 <section class="bg-[#f6f6f6] w-full">
@@ -32,7 +34,7 @@
 			<div
 				class="bg-[#fa0f0f] rounded-sm h-4 w-4 text-xs text-white place-items-center relative top-5 right-1 text-center"
 			>
-				{amount}
+				<p>{totalCartItems}</p>
 			</div>
 		</div>
 	</div>
