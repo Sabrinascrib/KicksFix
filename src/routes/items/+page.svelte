@@ -49,19 +49,27 @@
 						class="w-96 rounded-sm relative duration-100 opacity-0 hover:opacity-100"
 						src={product.img1}
 						alt={product.title}
-					/>
-					<h4 class="font-semibold text-lg mt-4">{product.title}</h4>
-				</a>
-				<div class="flex flex-row place-items-center">
-					<p class="font-normal text-base">{product.price}</p>
-					<span class="text-[#fa0f0f] italic text-xs ml-2"> (resell price) </span>
+					/></a
+				>
+				<div class="flex flex-row justify-between">
+					<div class="flex flex-col">
+						<h4 class="font-semibold text-lg mt-4">{product.title}</h4>
+
+						<div class="flex flex-row place-items-center">
+							<p class="font-normal text-base">{product.price}€</p>
+							<span class="text-[#fa0f0f] italic text-xs ml-2"> (resell price) </span>
+						</div>
+					</div>
+					<button
+						class="bg-[#fa0f0f] hover:bg-[#ea1717] duration-75 text-white font-semibold rounded-sm mt-4 h-8 px-2 "
+						on:click={() => addToCart(product)}>Add to cart</button
+					>
 				</div>
-				<button on:click={() => addToCart(product)}>Add to cart</button>
 			</div>
 		{/each}
 	</div>
 	<div class="w-6 mx-auto">
-		<hr class="border-2   border-[#fa0f0f] text-center" />
+		<hr class="border-2 border-[#fa0f0f] text-center" />
 	</div>
 </main>
 
