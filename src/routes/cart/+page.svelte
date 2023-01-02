@@ -13,23 +13,23 @@
 
 <Navbar />
 
-Cart({totalCartItems})
-
 <div class="cart">
+	<h3 class="text-4xl uppercase ">Your Shopping Cart</h3>
 	{#if $cart.length}
 		{#each $cart as item}
 			<div class="flexible-grid">
-				<p>{item.title}</p>
 				<div>{item.img}</div>
+				<p>{item.title}</p>
+
 				<input min="0" max="99" class="w-60" type="number" bind:value={item.quantity} />
-				<p>€{item.price * item.quantity}</p>
+				<p>{item.price * item.quantity}€</p>
 			</div>
 		{/each}
 		<div class="total-amount">
 			<p>Total</p>
 			<p />
 			<p>{totalCartItems}</p>
-			<p>{totalAmount}E</p>
+			<p>{totalAmount}€</p>
 		</div>
 		<div class="flex">
 			<button on:click={checkout} class="ml-auto">Checkout</button>
@@ -40,37 +40,7 @@ Cart({totalCartItems})
 </div>
 
 <style>
-	.flexible-grid {
-		display: grid;
-		place-items: center;
-		max-width: 300px;
-		grid-template-columns: 1fr 1fr 1fr 1fr;
-	}
-	.total-amount {
-		display: grid;
-		place-items: center;
-		grid-template-columns: 1fr 1fr 1fr 1fr;
-		border-top: 2px dashed #eee;
-	}
-	details {
-		display: inline;
-		border: 2px solid #eee;
-		margin-bottom: 20px;
-		cursor: pointer;
-	}
-	summary {
-		padding: 0 10px;
-	}
-	.cart {
-		padding: 10px;
-	}
-	.flex {
-		display: flex;
-	}
-	.ml-auto {
-		margin-left: auto;
-	}
-	.w-60 {
-		width: 60px;
+	h3 {
+		font-family: 'Bebas Neue', sans-serif;
 	}
 </style>
