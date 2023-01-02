@@ -61,7 +61,7 @@
 						</div>
 					</div>
 					<button
-						class="bg-[#fa0f0f] hover:bg-[#ea1717] duration-75 text-white font-semibold rounded-sm mt-4 h-8 px-2 "
+						class="bg-[#fa0f0f] hover:bg-[#ea1717] duration-75 text-white text-lg tracking-wider font-semibold rounded-sm mt-4 h-8 px-2 "
 						on:click={() => addToCart(product)}>Add to cart</button
 					>
 				</div>
@@ -79,5 +79,8 @@
 	@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
 	main {
 		font-family: 'Poppins', sans-serif;
+	}
+	button {
+		font-family: 'Bebas Neue', sans-serif;
 	}
 </style>
