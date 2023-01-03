@@ -53,7 +53,7 @@
 				>
 				<div class="flex flex-row justify-between">
 					<div class="flex flex-col">
-						<h4 class="font-semibold text-lg mt-4">{product.title}</h4>
+						<h4 class="font-semibold text-lg mt-4 uppercase">{product.title}</h4>
 
 						<div class="flex flex-row place-items-center">
 							<p class="font-normal text-base">{product.price}€</p>
