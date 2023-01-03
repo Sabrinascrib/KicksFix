@@ -11,7 +11,7 @@
 </script>
 
 <nav
-	class="container bg-[#f6f6f6] w-full place-items-center   py-8  md:flex-row-reverse md:flex justify-between md:items-center"
+	class="container justify-between bg-[#f6f6f6] w-full place-items-center py-8 md:flex-row-reverse md:flex  md:items-center"
 >
 	<div class="">
 		<a class="text-4xl absolute" href="/cart"
@@ -66,7 +66,7 @@
 
 	<!-- Mobile Menu open: "block", Menu closed: "hidden" -->
 	<div
-		class="flex-col mt-8 space-y-4 md:flex md:space-y-0 md:flex-row md:items-center md:space-x-10 md:mt-0 {showMenu
+		class=" links flex-col mt-8 space-y-4 md:flex md:space-y-0 md:flex-row md:items-center md:space-x-10 md:mt-0 {showMenu
 			? 'flex'
 			: 'hidden'}"
 	>
