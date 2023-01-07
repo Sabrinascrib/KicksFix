@@ -41,7 +41,7 @@
 	</div>
 
 	<div class="max-w-[1500px] flex flex-row flex-wrap place-items-center  justify-evenly">
-		{#each $products as product}
+		{#each products as product}
 			<div class="flex flex-col  m-10">
 				<a href={`/product/${product.id}`}>
 					<img class="w-96 rounded-sm absolute" src={product.img} alt={product.title} />
