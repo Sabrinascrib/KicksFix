@@ -29,7 +29,7 @@
 
 	<div class=" flex flex-col max-w-[663px] justify-between xl:w-1/2">
 		<div class="flex max-w-[663px] flex-col">
-			<h2 class="font-bold text-3xl">{data.product.title}</h2>
+			<h2 class="font-bold text-3xl mt-4">{data.product.title}</h2>
 			<p class="text-xl mb-4 mt-5">{data.product.price}€</p>
 		</div>
 
