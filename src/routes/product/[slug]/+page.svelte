@@ -7,7 +7,19 @@
 </script>
 
 <Navbar />
-
+<a
+	class="flex flex-row place-items-center text-xl duration-75 md:text-xl ml-4 mt-4 hover:text-gray-700"
+	href="/items"
+>
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		width="1em"
+		height="1em"
+		viewBox="0 0 24 24"
+		class="mr-2 mt-[-2px]"
+		><path fill="currentColor" d="M16 22L6 12L16 2l1.775 1.775L9.55 12l8.225 8.225Z" /></svg
+	> Back</a
+>
 <div
 	class="flex mx-auto flex-col-reverse  px-10 my-40 max-w-[663px]   xl:flex-row xl:max-w-[1500px]"
 >
@@ -35,4 +47,7 @@
 <Footer />
 
 <style>
+	a {
+		font-family: 'Bebas Neue', sans-serif;
+	}
 </style>
