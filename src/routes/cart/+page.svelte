@@ -4,7 +4,7 @@
 	import { products, cart } from '$lib/data';
 
 	const checkout = () => {
-		alert(JSON.stringify($cart));
+		alert('checked out');
 	};
 
 	$: totalCartItems = $cart.length && $cart.reduce((sum, item) => sum + item.quantity, 0);
