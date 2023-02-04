@@ -1,5 +1,5 @@
 <script>
-	import { products, cart } from '$lib/data';
+	import { products, cart } from '$lib/stores/dataes/data';
 
 	$: totalCartItems = $cart.length && $cart.reduce((sum, item) => sum + item.quantity, 0);
 
