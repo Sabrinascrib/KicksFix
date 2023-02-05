@@ -26,7 +26,7 @@
 		<img
 			class=" w-[500px] sm:w-[700px] sm:mb-[-300px] sm:ml-[-20px]"
 			src={firered}
-			alt="blue plushie"
+			alt="Jordan 4 Fire Red"
 		/>
 	</div>
 </section>
